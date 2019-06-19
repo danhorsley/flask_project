@@ -5,6 +5,6 @@ def create_app():
   """Create and configure instance of the Flask application"""
     @app.route('/')
     def root():
-    return 'Welcome to TwitOff!!'
+      return 'Welcome to TwitOff!!'
     
-return app
+  return app
