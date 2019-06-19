@@ -9,9 +9,16 @@ class User(DB.Model):
   id = DB.Column(DB.Integer, primary_key=True)
   name = DB.Column(DB.String(15), nullable = False)
   
+  def __repr__(self):
+    return '<User {}.'.format(self.name)
+  
 class Tweet(DB.Model):
+  """Tweets"""
   id = DB.Column(DB.Integer, primary_key=True)
   text = DB.Column(DB.Unicode(280))
+  
+   def __repr__(self):
+    return '<Tweet {}.'.format(self.text)
   
   
 
