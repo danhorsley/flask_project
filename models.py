@@ -12,5 +12,7 @@ class User(DB.Model):
 class Tweet(DB.Model):
   id = DB.Column(DB.Integer, primary_key=True)
   text = DB.Column(DB.Unicode(280))
+  
+  
 
   
